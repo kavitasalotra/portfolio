@@ -53,7 +53,12 @@ export default function Home() {
           </a>
         </div>
       </main>
+<section className='bg-brand p-10'>
+  <p className='font-primary title'>primary font</p>
+  <p className='font-secondary'>secondary font</p>
+  <a className='primary-button'>Link or button</a>
 
+</section>
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
