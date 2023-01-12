@@ -13,10 +13,10 @@ const Wrapper = styled.div`
 const HomeHero = () => {
   return (
     <Wrapper className="bg-center-top">
-      <div className="min-h-screen">
-        <div className="relative">
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="flex flex-col items-center justify-between xl:flex-row">
+      <div className="min-h-screen flex items-center">
+        <div className="">
+          <div className="px-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+            <div className="flex flex-col items-center justify-end xl:flex-row">
               <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
                 <Heading
                   hasTextColorPrimaryDark
@@ -24,7 +24,7 @@ const HomeHero = () => {
                   textAlignLeft
                   hasFontExtrabold>
                   Hello
-                  <span className="text-secondaryLight">I&apos;m Jackson</span>
+                  <h1 className="text-secondaryLight">I&apos;m Jackson</h1>
                 </Heading>
                 <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
