@@ -1,12 +1,13 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
+import Layout from '../components/Layout';
+import HomeHero from '../components/home/HomeHero';
 
 const index = () => {
   return (
-    <div>
-      <Navbar/>
-    </div>
-  )
-}
+    <Layout>
+      <HomeHero />
+    </Layout>
+  );
+};
 
-export default index
+export default index;
