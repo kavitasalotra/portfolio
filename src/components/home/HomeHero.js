@@ -1,23 +1,25 @@
 import React from 'react';
 import Link from 'next/link';
 // import Image from 'next/image';
+import Paragraph from '../atoms/Paragraph';
+import Button from '../atoms/Button';
 import Heading from '../atoms/Heading';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background-image: url('/images/Homehero.jpg.webp');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 `;
 
 const HomeHero = () => {
   return (
-    <Wrapper className="bg-center-top">
-      <div className="min-h-screen flex items-center">
+    <Wrapper className="">
+      <div className="min-h-screen flex items-center md:px-16">
         <div className="">
-          <div className="px-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+          <div className="px-4 sm:max-w-xl md:max-w-full md:px-24">
             <div className="flex flex-col items-center justify-end xl:flex-row">
-              <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+              <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 space-y-8">
                 <Heading
                   hasTextColorPrimaryDark
                   textExtraLarge
@@ -26,17 +28,12 @@ const HomeHero = () => {
                   Hello
                   <h1 className="text-secondaryLight">I&apos;m Jackson</h1>
                 </Heading>
-                <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                  quae.
-                </p>
-                <Link
-                  href="/"
-                  aria-label=""
-                  className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700">
-                  Learn more
-                </Link>
+                <Paragraph hasTextColorWhite textAlignLeft>
+                  I photograph very instinctively. I see how it is taken like
+                  that. I do not follow certain styles, philosophies or
+                  teachers.
+                </Paragraph>
+                <Button className="px-3 py-2">Get a quote</Button>
               </div>
             </div>
           </div>

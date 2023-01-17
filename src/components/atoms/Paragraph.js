@@ -4,6 +4,7 @@ const Paragraph = ({
   children,
   hasTextColorWhite,
   textAlignLeft,
+  hasTextSmall,
   className,
   ...props
 }) => {
@@ -11,7 +12,9 @@ const Paragraph = ({
     <p
       className={`font-normal ${hasTextSmall ? 'text-sm' : 'text-base'} ${
         hasTextColorWhite ? 'text-white' : 'text-textGray'
-      }   ${textAlignLeft ? 'text-left' : 'text-center'} ${className}`}
+      }  ${
+        textAlignLeft ? 'text-left' : 'text-center'
+      } font-poppins ${className}`}
       {...props}>
       {children}
     </p>

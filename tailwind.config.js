@@ -16,7 +16,7 @@ module.exports = {
         textPrimaryDark: '#212529',
         // iconPrimary: '#89C053',
         // iconSecondary: '#5829FF',
-        backgroundLite: '#F9F9F9',
+        backgroundLite: 'rgba(0, 0, 0, 0.2)',
         primaryDark: '#fc6060',
         // primaryLight: '#F5E9F9',
         // secondaryDark: '#804BEE',

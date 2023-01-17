@@ -9,7 +9,7 @@ const Button = ({
 }) => (
   <button
     className={`text-base
-    font-medium rounded-full text-textDark ${hasFullWidth ? 'w-full' : 'w-auto'}
+    font-medium rounded-full text-white ${hasFullWidth ? 'w-full' : 'w-auto'}
   ${className} bg-transparent border-2 border-primaryDark font-poppins hover:bg-primaryDark hover:text-white`}
     type="button"
     {...props}>
