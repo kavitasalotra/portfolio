@@ -3,30 +3,30 @@ import Image from 'next/image';
 import Heading from '../atoms/Heading';
 import Paragraph from '../atoms/Paragraph';
 
-const image = [
+const galleryImages = [
   {
     id: 1,
-    image: '/images/gallery-6.webp',
+    image: '/images/instagram-image1.jpg.webp',
   },
   {
     id: 2,
-    image: '/images/gallery-5.webp',
+    image: '/images/instagram-image2.jpg.webp',
   },
   {
     id: 3,
-    image: '/images/gallery-3.webp',
+    image: '/images/instagram-image3.jpg.webp',
   },
   {
     id: 4,
-    image: '/images/gallery-1.jpg.webp',
+    image: '/images/instagram-image4.jpg.webp',
   },
   {
     id: 5,
-    image: '/images/gallery-2.jpg.webp',
+    image: '/images/instagram-image5.jpg.webp',
   },
   {
     id: 6,
-    image: '/images/gallery-4.webp',
+    image: '/images/instagram-image6.jpg.webp',
   },
   // {
   //   id: 7,
@@ -50,14 +50,15 @@ const GalleryItem = () => {
         <Paragraph>@Alime_photographer</Paragraph>
       </div>
       <div className="flex">
-        {image &&
-          image.map((item) => (
+        {galleryImages &&
+          galleryImages.map((item) => (
             <div className="" key={item.id}>
               <Image
                 src={item.image}
                 height={250}
                 width={312}
                 alt="galleryImage"
+                className="object-contain"
               />
             </div>
           ))}

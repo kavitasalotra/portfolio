@@ -2,7 +2,7 @@ import Footer from './global/Footer';
 import Navbar from './global/Navbar';
 
 const Layout = ({ children }) => (
-  <div className="">
+  <div>
     <Navbar />
     {children}
     <Footer />

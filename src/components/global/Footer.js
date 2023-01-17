@@ -14,7 +14,7 @@ const Footer = () => {
             width={82}
             height={21}
             alt="logo"
-            objectFit="contain"
+            className="object-contain"
           />
           <div className="flex flex-col pt-6 lg:pt-0">
             <div className="flex justify-center space-x-4">
