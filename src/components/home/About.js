@@ -1,31 +1,36 @@
+import Image from 'next/image';
 import React from 'react';
+import Button from '../atoms/Button';
+import Heading from '../atoms/Heading';
+import Paragraph from '../atoms/Paragraph';
+import Banner from '../elements/Banner';
 
+const content = {
+  image: '/images/about-image.jpg.webp',
+  title: 'We Live For Passion',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n   eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo  \n   enim ipsam et dolore magnam aliquam quaerat voluptatem. \n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  \n eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo \n  enim ipsam et dolore magnam aliquam quaerat voluptatem.',
+};
 const About = () => {
   return (
     <div>
+      <Banner pageTitle="About Us" pageName="About" />
       <section>
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-              <img
-                alt="Party"
-                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                class="absolute inset-0 h-full w-full object-cover"
-              />
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <Image alt="Party" src={content.image} width={540} height={387} />
             </div>
-            <div class="lg:py-24">
-              <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
-              <p class="mt-4 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-                qui hic atque tenetur quis eius quos ea neque sunt, accusantium
-                soluta minus veniam tempora deserunt? Molestiae eius quidem quam
-                repellat.
-              </p>
-              <a
-                href="#"
-                class="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
-                <span class="text-sm font-medium"> Get Started </span>
-              </a>
+            <div className="lg:py-24 space-y-6">
+              <Heading textAlignLeft>{content.title}</Heading>
+              <Paragraph
+                textAlignLeft
+                className="whitespace-pre-line leading-6">
+                {content.description}
+              </Paragraph>
+              <Button hasTextDark className="py-2 px-4">
+                contact Us
+              </Button>
             </div>
           </div>
         </div>

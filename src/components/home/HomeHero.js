@@ -19,7 +19,9 @@ const HomeHero = () => {
                 textAlignLeft
                 hasFontExtrabold>
                 Hello
-                <span className="text-secondaryLight">I&apos;m Jackson</span>
+                <span className="text-secondaryLight pl-2 md:pl-6">
+                  I&apos;m Jackson
+                </span>
               </Heading>
               <Paragraph hasTextColorWhite textAlignLeft>
                 I photograph very instinctively. I see how it is taken like

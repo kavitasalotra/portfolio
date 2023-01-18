@@ -5,11 +5,14 @@ const Button = ({
   isPaddingLarge,
   hasFullWidth,
   className,
+  hasTextDark,
   ...props
 }) => (
   <button
     className={`text-base
-    font-medium rounded-full text-white ${hasFullWidth ? 'w-full' : 'w-auto'}
+    font-medium rounded-full ${hasTextDark ? 'text-textDark' : 'text-white'} ${
+      hasFullWidth ? 'w-full' : 'w-auto'
+    }
   ${className} bg-transparent border-2 border-primaryDark font-poppins hover:bg-primaryDark hover:text-white`}
     type="button"
     {...props}>
