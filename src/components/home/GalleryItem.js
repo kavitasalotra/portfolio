@@ -45,11 +45,11 @@ const galleryImages = [
 const GalleryItem = () => {
   return (
     <div className="py-3 md:py-8">
-      <div className="space-y-4">
+      <div className="space-y-2 md:space-y-4 py-2 md:py-4">
         <Heading>Follow Instagram</Heading>
         <Paragraph>@Alime_photographer</Paragraph>
       </div>
-      <div className="flex">
+      <div className="flex-wrap flex justify-center">
         {galleryImages &&
           galleryImages.map((item) => (
             <div className="" key={item.id}>

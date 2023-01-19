@@ -4,6 +4,7 @@ import About from '../components/home/About';
 
 import Teams from '../components/home/Teams';
 import Features from '../components/home/Features';
+import GalleryItem from '../components/home/GalleryItem';
 
 const about = () => {
   return (
@@ -11,6 +12,7 @@ const about = () => {
       <About />
       <Features />
       <Teams />
+      <GalleryItem />
     </Layout>
   );
 };

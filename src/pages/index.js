@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import HomeHero from '../components/home/HomeHero';
 import styled from 'styled-components';
 import GalleryItem from '../components/home/GalleryItem';
+import CategoryImages from '../components/tabMenu/CategoryImages';
 
 const Wrapper = styled.div`
   background-image: url('/images/Homehero.jpg.webp');
@@ -16,6 +17,7 @@ const index = () => {
       <Wrapper>
         <HomeHero />
       </Wrapper>
+      <CategoryImages />
       <GalleryItem />
     </Layout>
   );

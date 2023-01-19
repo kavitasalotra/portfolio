@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="bg-backgroundLite fixed z-10 top-0 left-0 right-0">
         <div className="container mx-auto">
           <nav className="py-4 md:py-8 px-6 md:px-16">
-            <div className="flex items-center space-x-4 justify-between">
+            <div className="flex items-center space-x-4 justify-around">
               <Link href="/">
                 <div className="block">
                   <Image
@@ -38,13 +38,13 @@ const Navbar = () => {
                     />
                   ) : (
                     <GiHamburgerMenu
-                      className="h-8 w-12 md:w-24"
+                      className="h-8 w-12 md:w-24 text-white"
                       aria-hidden="true"
                     />
                   )}
                 </button>
               </div>
-              <div className="flex-1 flex font-poppins items-center justify-end sm:items-stretch sm:justify-center">
+              <div className="flex font-poppins items-center justify-end sm:items-stretch sm:justify-center">
                 <div className="hidden sm:block">
                   <div className="flex space-x-8">
                     <Link href="/programs">
@@ -76,19 +76,19 @@ const Navbar = () => {
           </nav>
           {active && (
             <div className="sm:hidden flex flex-col space-y-2 text-center bg-white px-2 pt-6 mx-2">
-              <Link href="/programs">
+              <Link href="/">
                 <span
                   className="text-textDark px-5 py-2 rounded-md text-base font-medium"
                   aria-current="page">
                   Home
                 </span>
               </Link>
-              <Link href="/nutrition">
+              <Link href="/about">
                 <span className="text-textDark px-5 py-2 rounded-md text-base font-medium">
                   About
                 </span>
               </Link>
-              <Link href="/contact">
+              <Link href="/blog">
                 <span className="text-textDark px-5 py-2 rounded-md text-base font-medium">
                   Blog
                 </span>
