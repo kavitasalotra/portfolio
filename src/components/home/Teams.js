@@ -32,38 +32,6 @@ const data = [
   },
 ];
 
-// const TeamItem = ({ item }) => {
-//   <div className="flex flex-row justify-between">
-//     <div className="flex p-4 md:py-9 md:px-8 flex-col justify-center my-3 md:my-8 md:space-y-4 text-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
-//       <Image
-//         alt=""
-//         className="self-center flex-shrink-0 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500"
-//         src={item.image}
-//         width={165}
-//         height={165}
-//       />
-//       <div>
-//         <Title>{item.teamMemberName}</Title>
-//         <span className="text-primaryDark">PHOTOGRAPHER</span>
-//       </div>
-//       <div className="flex justify-center space-x-1 md:space-x-2">
-//         <a href="#" title="Instagram">
-//           <TiSocialFacebook className="w-6 h-6" />
-//         </a>
-//         <a href="#" title="Pinterest">
-//           <TiSocialTwitter className="w-6 h-6" />
-//         </a>
-//         <a href="#" title="Twitter">
-//           <TiSocialLinkedin className="w-6 h-6" />
-//         </a>
-//         <a href="#" title="Facebook">
-//           <FaPinterestP className="w-4 h-5" />
-//         </a>
-//       </div>
-//     </div>
-//   </div>;
-// };
-
 const Teams = () => {
   return (
     <div>

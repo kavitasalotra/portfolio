@@ -47,7 +47,7 @@ const Navbar = () => {
               <div className="flex font-poppins items-center justify-end sm:items-stretch sm:justify-center">
                 <div className="hidden sm:block">
                   <div className="flex space-x-8">
-                    <Link href="/programs">
+                    <Link href="/">
                       <span
                         className="p-2 text-white rounded-md text-base font-medium hover:text-secondaryLight"
                         aria-current="page">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const imageList = [
+const images = [
   {
     id: 1,
     image: '/images/gallery-1.jpg.webp',
@@ -61,13 +61,13 @@ const imageList = [
 
 export const CategoryImages = () => {
   const [active, setActive] = useState('all');
-  const [teamList, setTeamList] = useState(imageList);
+  const [imageList, setImageList] = useState(images);
 
   const filterItem = (cateItem) => {
-    const updateItems = imageList?.filter((curEle) => {
+    const updateItems = images?.filter((curEle) => {
       return curEle.category === cateItem;
     });
-    setTeamList(updateItems);
+    setImageList(updateItems);
     setActive(updateItems);
   };
   // console.log(filterItem, 'filterItem');
@@ -80,7 +80,7 @@ export const CategoryImages = () => {
               <button
                 className="inline-block p-4 w-full text-textPrimaryDark active hover:underline hover:decoration-primaryDark"
                 aria-current="page"
-                onClick={() => setTeamList(imageList)}>
+                onClick={() => setImageList(images)}>
                 All
               </button>
             </li>
@@ -110,8 +110,8 @@ export const CategoryImages = () => {
           {active && (
             <div className="text-center lg:py-14 ">
               <div className="grid gap-3 lg:gap-8 md:grid-cols-3 lg:grid-cols-4">
-                {teamList.map((item) => (
-                  <div className="text-center" key={item.id}>
+                {imageList.map((item) => (
+                  <div key={item.id}>
                     <Image
                       alt=""
                       className="self-center flex-shrink-0 mb-4 bg-center bg-cover rounded-none"
