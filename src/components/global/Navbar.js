@@ -49,23 +49,23 @@ const Navbar = () => {
                   <div className="flex space-x-8">
                     <Link href="/">
                       <span
-                        className="p-2 text-white rounded-md text-base font-medium hover:text-secondaryLight"
+                        className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight"
                         aria-current="page">
                         Home
                       </span>
                     </Link>
                     <Link href="/about">
-                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-secondaryLight">
+                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
                         About
                       </span>
                     </Link>
                     <Link href="/blog">
-                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-secondaryLight">
+                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
                         Blog
                       </span>
                     </Link>
                     <Link href="/contact">
-                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-secondaryLight">
+                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
                         Contact
                       </span>
                     </Link>

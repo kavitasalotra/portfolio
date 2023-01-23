@@ -1,7 +1,7 @@
 import React from 'react';
 import PostItem from '../components/home/PostItem';
 import Layout from '../components/Layout';
-import Banner from '../components/elements/Banner';
+import HomeHeroWrapper from '../components/elements/HomeHeroWrapper';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -11,9 +11,9 @@ const blog = ({ posts }) => {
   return (
     <Layout>
       <div>
-        <Banner pageTitle="Latest Blog" pageName="blog" />
+        <HomeHeroWrapper pageTitle="Latest Blog" pageName="blog" />
         <div class="max-w-screen-xl p-5 mx-auto dark:bg-gray-800 dark:text-gray-100">
-          <div class="grid grid-cols-1 md:gap-4 md:grid-cols-4">
+          <div class="grid grid-cols-1 md:gap-4 md:grid-cols-4 gap-4">
             {posts &&
               posts.map((item, i) => {
                 return (

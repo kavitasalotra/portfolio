@@ -3,7 +3,7 @@ import Heading from '../atoms/Heading';
 import { AiOutlineHome } from 'react-icons/ai';
 import { RiArrowRightSLine } from 'react-icons/ri';
 
-const Banner = ({ pageTitle, pageName }) => {
+const HomeHeroWrapper = ({ pageTitle, pageName }) => {
   return (
     <div>
       <section className="relative bg-[url('/images/Homehero.jpg.webp')] bg-cover bg-left-top bg-no-repeat">
@@ -38,4 +38,4 @@ const Banner = ({ pageTitle, pageName }) => {
   );
 };
 
-export default Banner;
+export default HomeHeroWrapper;

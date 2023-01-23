@@ -4,7 +4,8 @@ import Image from 'next/image';
 const images = [
   {
     id: 1,
-    image: '/images/gallery-1.jpg.webp',
+
+    image: '/images/gallery-3.webp',
     category: 'All',
   },
   {
@@ -19,7 +20,7 @@ const images = [
   },
   {
     id: 4,
-    image: '/images/gallery-4.webp',
+    image: '/images/gallery-2.jpg.webp',
     category: 'Country',
   },
   {
@@ -34,7 +35,7 @@ const images = [
   },
   {
     id: 7,
-    image: '/images/gallery-7.jpg.webp',
+    image: '/images/gallery-4.webp',
     category: 'Nature',
   },
   {
@@ -44,7 +45,7 @@ const images = [
   },
   {
     id: 9,
-    image: '/images/gallery-3.webp',
+    image: '/images/gallery-1.jpg.webp',
     category: 'Human',
   },
   {
@@ -109,15 +110,15 @@ export const CategoryImages = () => {
           </ul>
           {active && (
             <div className="text-center lg:py-14 ">
-              <div className="grid gap-3 lg:gap-8 md:grid-cols-3 lg:grid-cols-4">
+              <div className="grid gap-3 lg:gap-8 md:grid-cols-4">
                 {imageList.map((item) => (
                   <div key={item.id}>
                     <Image
                       alt=""
-                      className="self-center flex-shrink-0 mb-4 bg-center bg-cover rounded-none"
-                      height={358}
-                      width={304}
+                      height={198}
+                      width={349}
                       src={item.image}
+                      className="object-contain"
                     />
                   </div>
                 ))}

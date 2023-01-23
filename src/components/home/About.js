@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../atoms/Button';
 import Heading from '../atoms/Heading';
 import Paragraph from '../atoms/Paragraph';
-import Banner from '../elements/Banner';
+import HomeHeroWrapper from '../elements/HomeHeroWrapper';
 
 const content = {
   image: '/images/about-image.jpg.webp',
@@ -14,7 +14,7 @@ const content = {
 const About = () => {
   return (
     <div>
-      <Banner pageTitle="About Us" pageName="About" />
+      <HomeHeroWrapper pageTitle="About Us" pageName="About" />
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">

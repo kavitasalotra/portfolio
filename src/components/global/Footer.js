@@ -11,13 +11,13 @@ import { FaPinterestP } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div>
-      <footer className="">
-        <div className="container flex flex-col p-4 justify-evenly mx-auto lg:flex-row divide-gray-400">
+      <footer>
+        <div className="container flex flex-col p-4 justify-evenly mx-auto lg:flex-row space-y-6">
           <span>
             Copyright ©2023 All rights reserved | This template is made with ♡
-            by{' '}
-            <Link href="/">
-              <strong className="text-primaryDark">Colorlib</strong>
+            by
+            <Link href="https://www.zeiq.co/">
+              <strong className="text-primaryDark pl-2">zeiq.co</strong>
             </Link>
           </span>
           <Image

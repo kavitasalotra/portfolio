@@ -1,10 +1,10 @@
 import React from 'react';
-import Banner from '../elements/Banner';
+import HomeHeroWrapper from '../elements/HomeHeroWrapper';
 
 const ContactUs = () => {
   return (
     <div>
-      <Banner pageTitle="Contact Us" pageName="Contact" />
+      <HomeHeroWrapper pageTitle="Contact Us" pageName="Contact" />
       <div className="container mx-auto">
         <section className="md:my-16 px-6 ">
           <div className="flex flex-wrap justify-center">

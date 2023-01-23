@@ -14,7 +14,7 @@ export default function PostPage({ source, frontMatter }) {
     <Layout>
       <div className="container mx-auto my-3 md:my-16">
         <Image
-          className="object-cover mx-auto h-screen"
+          className="object-cover mx-auto min-h-screen"
           src={frontMatter.image}
           alt=""
           width={1100}
