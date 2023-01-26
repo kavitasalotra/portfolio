@@ -43,7 +43,7 @@ const Teams = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="flex p-4 md:py-9 md:px-8 flex-col justify-center my-3 md:my-8 md:space-y-4 text-center shadow-[0_4px_20px_10px_rgba(87,87,87,0.1)]">
+              className="flex py-6 md:py-9 md:px-14 px-8 flex-col justify-center my-3 md:my-8 md:space-y-4 text-center shadow-[0_4px_20px_10px_rgba(87,87,87,0.1)]">
               <Image
                 alt="team-image"
                 className="self-center flex-shrink-0 mb-4 bg-center bg-cover rounded-full"

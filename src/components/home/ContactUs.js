@@ -6,15 +6,15 @@ const ContactUs = () => {
     <div>
       <HomeHeroWrapper pageTitle="Contact Us" pageName="Contact" />
       <div className="container mx-auto">
-        <section className="md:my-16 px-6 ">
+        <section className="md:my-16 my-6 px-6 ">
           <div className="flex flex-wrap justify-center">
-            <div className="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-3/12 px-3 lg:px-6">
+            <div className="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 md:w-full lg:w-3/12 px-3 lg:px-6">
               <h1 className="text-textDark text-xl md:text-5xl font-semibold md:tracking-wide">
                 Let’s Work Together
               </h1>
             </div>
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
-              <div className="flex flex-wrap justify-center">
+              <div className="flex flex-wrap md:justify-center">
                 <div className="mb-12 grow-0 shrink-0 basis-auto px-3 lg:px-6 space-y-9">
                   <div className="flex items-start">
                     <div className="ml-6">
@@ -38,7 +38,7 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
-                  <div className="flex justify-center md:items-start">
+                  <div className="flex md:justify-center md:items-start">
                     <div className="ml-6">
                       <p className="font-normal text-sm text-textGray mb-1">
                         Visit Us

@@ -11,8 +11,8 @@ import { FaPinterestP } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div>
-      <footer>
-        <div className="container flex flex-col p-4 justify-evenly mx-auto lg:flex-row space-y-6">
+      <footer className="container mx-auto">
+        <div className=" flex flex-col p-4 justify-evenly md:items-center mx-auto lg:flex-row md:space-y-0 md:pb-8 space-y-6">
           <span>
             Copyright ©2023 All rights reserved | This template is made with ♡
             by
@@ -29,16 +29,16 @@ const Footer = () => {
           />
           <div className="flex flex-col pt-6 lg:pt-0">
             <div className="flex justify-center space-x-6">
-              <a rel="noopener noreferrer" href="#" title="Instagram">
+              <a href="#" title="Instagram">
                 <TiSocialFacebook className="w-6 h-6" />
               </a>
-              <a rel="noopener noreferrer" href="#" title="Pinterest">
+              <a href="#" title="Pinterest">
                 <TiSocialTwitter className="w-6 h-6" />
               </a>
-              <a rel="noopener noreferrer" href="#" title="Twitter">
+              <a href="#" title="Twitter">
                 <TiSocialLinkedin className="w-6 h-6" />
               </a>
-              <a rel="noopener noreferrer" href="#" title="Facebook">
+              <a href="#" title="Facebook">
                 <FaPinterestP className="w-4 h-5" />
               </a>
             </div>

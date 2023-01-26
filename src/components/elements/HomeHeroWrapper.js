@@ -10,7 +10,7 @@ const HomeHeroWrapper = ({ pageTitle, pageName }) => {
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex justify-center lg:min-h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center md:text-center ">
             <Heading className="text-white">{pageTitle}</Heading>
-            <nav className="flex" aria-label="Breadcrumb">
+            <nav className="flex justify-center" aria-label="Breadcrumb">
               <ol className="inline-flex items-center space-x-1">
                 <li className="inline-flex items-center">
                   <a

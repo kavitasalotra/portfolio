@@ -53,7 +53,7 @@ const Features = () => (
       <div class="mx-auto max-w-xl text-center py-4">
         <Heading>Why Choose Us</Heading>
       </div>
-      <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
+      <div class="mt-16 grid grid-cols-1 gap-24 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">
         {features.map((item) => (
           <FeaturedItem key={item.id} item={item} />
         ))}
