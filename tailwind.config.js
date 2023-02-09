@@ -9,6 +9,32 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
     extend: {
+      animation: {
+        text: 'text 3s ease infinite',
+      },
+      keyframes: {
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+          '0%': {
+            width: '0',
+          },
+          '100%': {
+            width: '21.5ch',
+          },
+        },
+        cursor: {
+          '0%, 100%': {
+            'border-color': '#212121',
+          },
+        },
+      },
       colors: {
         textDark: '#252525', // ADD YOUR COLOR CODE HERE
         // textLight: '#FAF7FF', // ADD YOUR COLOR CODE HERE

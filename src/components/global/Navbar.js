@@ -49,12 +49,12 @@ const Navbar = () => {
                   <div className="flex space-x-8">
                     <Link href="/">
                       <span
-                        className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight"
+                        className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark transition duration-1000 ease-in-out hover:underline decoration-2 decoration-primaryDark hover:underline-offset-4"
                         aria-current="page">
                         Home
                       </span>
                     </Link>
-                    <Link href="/about">
+                    {/* <Link href="/about">
                       <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
                         About
                       </span>
@@ -68,7 +68,7 @@ const Navbar = () => {
                       <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
                         Contact
                       </span>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

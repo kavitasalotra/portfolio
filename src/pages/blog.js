@@ -15,10 +15,10 @@ const blog = ({ posts }) => {
         <div class="max-w-screen-xl p-5 mx-auto dark:bg-gray-800 dark:text-gray-100">
           <div class="grid grid-cols-1 md:gap-4 md:grid-cols-4 gap-4">
             {posts &&
-              posts.map((item, i) => {
+              posts.map((item) => {
                 return (
                   <PostItem
-                    key={item.filePath}
+                    key={item.id}
                     item={item.data}
                     filePath={item.filePath}
                   />

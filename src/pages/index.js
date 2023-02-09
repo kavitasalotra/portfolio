@@ -6,7 +6,7 @@ import GalleryItem from '../components/home/GalleryItem';
 import CategoryImages from '../components/tabMenu/CategoryImages';
 
 const Wrapper = styled.div`
-  background-image: url('/images/Homehero.jpg.webp');
+  background-image: url('/images/Home-hero-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 `;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const index = () => {
   return (
     <Layout>
-      <Wrapper>
+      <Wrapper className="h-screen">
         <HomeHero />
       </Wrapper>
       <CategoryImages />

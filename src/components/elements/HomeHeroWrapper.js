@@ -24,7 +24,7 @@ const HomeHeroWrapper = ({ pageTitle, pageName }) => {
                     <RiArrowRightSLine className="text-white w-6 h-5" />
                     <a
                       href="#"
-                      className="ml-1 text-base font-normal text-primaryDark md:ml-2">
+                      className="ml-1 text-base font-normal text-white md:ml-2">
                       {pageName}
                     </a>
                   </div>

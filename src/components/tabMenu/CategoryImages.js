@@ -5,8 +5,8 @@ const images = [
   {
     id: 1,
 
-    image: '/images/gallery-3.webp',
-    category: 'All',
+    image: '/images/gallery-1.jpg',
+    category: 'Human',
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const images = [
   },
   {
     id: 9,
-    image: '/images/gallery-1.jpg.webp',
+    image: '/images/gallery-1.jpg',
     category: 'Human',
   },
   {
@@ -74,9 +74,9 @@ export const CategoryImages = () => {
   // console.log(filterItem, 'filterItem');
   return (
     <section className="container mx-auto">
-      <div className="my-2 md:my-6 py-2 md:py-3">
-        <div className="flex flex-col items-center justify-centers">
-          <ul className="hidden font-semibold text-xl text-center sm:flex ">
+      <div className="my-2 md:my-6 py-2 md:py-3 px-4 md:px-0">
+        <div className="flex flex-col items-center justify-center">
+          <ul className="font-semibold text-xl text-center flex">
             <li className="w-full">
               <button
                 className="inline-block p-4 w-full text-textPrimaryDark active hover:underline hover:decoration-primaryDark"
@@ -110,7 +110,7 @@ export const CategoryImages = () => {
           </ul>
           {active && (
             <div className="text-center lg:py-14 ">
-              <div className="grid gap-3 lg:gap-8 md:grid-cols-4">
+              <div className="grid gap-3 justify-center lg:gap-8 md:grid-cols-4">
                 {imageList.map((item) => (
                   <div key={item.id}>
                     <Image
