@@ -102,7 +102,7 @@ export const CategoryImages = () => {
           <ul className="font-semibold text-xl text-center flex">
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark active hover:underline hover:decoration-primaryDark"
+                className="inline-block p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
                 aria-current="page"
                 onClick={() => setImageList(images)}>
                 All
@@ -110,21 +110,21 @@ export const CategoryImages = () => {
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark active hover:underline hover:decoration-primaryDark"
+                className="inline-block p-4 w-full text-textPrimaryDark hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
                 onClick={() => filterItem('Human')}>
                 Human
               </button>
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark active hover:underline hover:decoration-primaryDark"
+                className="inline-block p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
                 onClick={() => filterItem('Nature')}>
                 Nature
               </button>
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark active hover:underline hover:decoration-primaryDark"
+                className="inline-block p-4 w-full text-textPrimaryDark   hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
                 aria-current="page"
                 onClick={() => filterItem('Country')}>
                 Country

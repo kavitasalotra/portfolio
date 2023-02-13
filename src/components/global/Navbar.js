@@ -5,11 +5,18 @@ import Link from 'next/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 
+const navbarMenu = [
+  { navItem: 'Home', navLink: '/' },
+  { navItem: 'About', navLink: '/about' },
+  { navItem: 'Blog', navLink: '/blog' },
+  { navItem: 'Contact', navLink: '/contact' },
+];
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
     <div className="">
-      <div className="bg-backgroundLite fixed z-10 top-0 left-0 right-0">
+      <div className="bg-backgroundLite absolute z-10 top-0 left-0 right-0">
         <div className="container mx-auto">
           <nav className="py-4 md:py-8 px-6 md:px-16">
             <div className="flex items-center space-x-4 justify-around">
@@ -47,57 +54,31 @@ const Navbar = () => {
               <div className="flex font-poppins items-center justify-end sm:items-stretch sm:justify-center">
                 <div className="hidden sm:block">
                   <div className="flex space-x-8">
-                    <Link href="/">
-                      <span
-                        className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark transition duration-1000 ease-in-out hover:underline decoration-2 decoration-primaryDark hover:underline-offset-4"
-                        aria-current="page">
-                        Home
-                      </span>
-                    </Link>
-                    {/* <Link href="/about">
-                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
-                        About
-                      </span>
-                    </Link>
-                    <Link href="/blog">
-                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
-                        Blog
-                      </span>
-                    </Link>
-                    <Link href="/contact">
-                      <span className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark hover-underline-primaryLight">
-                        Contact
-                      </span>
-                    </Link> */}
+                    {navbarMenu.map((item) => (
+                      <Link href={item.navLink} key={item.id}>
+                        <span
+                          className="p-2 text-white rounded-md text-base font-medium hover:text-primaryDark transition duration-1000 ease-in-out"
+                          aria-current="page">
+                          {item.navItem}
+                        </span>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           </nav>
           {active && (
-            <div className="sm:hidden flex flex-col space-y-2 text-center bg-white px-2 pt-6 mx-2">
-              <Link href="/">
-                <span
-                  className="text-textDark px-5 py-2 rounded-md text-base font-medium"
-                  aria-current="page">
-                  Home
-                </span>
-              </Link>
-              <Link href="/about">
-                <span className="text-textDark px-5 py-2 rounded-md text-base font-medium">
-                  About
-                </span>
-              </Link>
-              <Link href="/blog">
-                <span className="text-textDark px-5 py-2 rounded-md text-base font-medium">
-                  Blog
-                </span>
-              </Link>
-              <Link href="/contact">
-                <span className="text-textDark px-5 py-2 rounded-md text-base font-medium">
-                  Contact
-                </span>
-              </Link>
+            <div className="sm:hidden flex flex-col space-y-2 text-center bg-primaryDark/30 px-2 pt-6 mx-2 ">
+              {navbarMenu.map((item) => (
+                <Link href={item.navLink} key={item.id}>
+                  <span
+                    className="text-white px-5 py-2 rounded-md text-base font-medium hover:text-primaryDark transition duration-1000 ease-in-out"
+                    aria-current="page">
+                    {item.navItem}
+                  </span>
+                </Link>
+              ))}
             </div>
           )}
         </div>
