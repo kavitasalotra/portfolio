@@ -35,15 +35,13 @@ const data = [
 
 const Teams = () => {
   return (
-    <div>
-      <section className="py-6">
-        <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-          <Heading>Our team</Heading>
-          <Paragraph>
-            We’re Gleam, a destination photo agency based in New York. Check our
-            amazing team.
-          </Paragraph>
-        </div>
+    <section>
+      <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+        <Heading>Our team</Heading>
+        <Paragraph>
+          We’re Gleam, a destination photo agency based in New York. Check our
+          amazing team.
+        </Paragraph>
         <div className="flex flex-wrap flex-row md:space-x-14 justify-center">
           {data.map((item) => (
             <div key={item.id} className="group">
@@ -81,8 +79,8 @@ const Teams = () => {
             </div>
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

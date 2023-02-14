@@ -1,6 +1,6 @@
 import React from 'react';
 import PostItem from '../components/home/PostItem';
-import Layout from '../components/Layout';
+import Layout from '../components/global/Layout';
 import HomeHeroWrapper from '../components/elements/HomeHeroWrapper';
 import fs from 'fs';
 import path from 'path';

@@ -1,5 +1,5 @@
-import Footer from './global/Footer';
-import Navbar from './global/Navbar';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Layout = ({ children }) => (
   <div>

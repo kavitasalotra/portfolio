@@ -18,17 +18,16 @@ const Navbar = () => {
     <div className="">
       <div className="bg-backgroundLite absolute z-10 top-0 left-0 right-0">
         <div className="container mx-auto">
-          <nav className="py-4 md:py-8 px-6 md:px-16">
-            <div className="flex items-center space-x-4 justify-around">
+          <nav className="py-4 md:py-0 px-0 md:px-16">
+            <div className="flex items-center justify-around">
               <Link href="/">
-                <div className="block">
-                  <Image
-                    src="/images/logo.png.webp"
-                    alt="logo"
-                    width={82}
-                    height={39}
-                  />
-                </div>
+                <Image
+                  src="/images/logo.png"
+                  alt="logo"
+                  width={150}
+                  height={128}
+                  className="object-cover"
+                />
               </Link>
               <div className="flex items-center sm:hidden">
                 <button

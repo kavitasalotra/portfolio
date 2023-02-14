@@ -31,9 +31,9 @@ const features = [
 
 const FeaturedItem = ({ item }) => {
   return (
-    <div>
-      <div className="relative bg-white animate-square-fill">
-        <div class="absolute left-36 -top-14 w-20 h-20 bg-primaryDark hover:bg-black rounded-full flex justify-center items-center text-center p-5 animate-square-fill-in">
+    <div className="group">
+      <div className="relative bg-white group-hover:bg-primaryDark rounded-xl group-hover:transition group-hover:ease-in-out delay-100 group-hover:-translate-y-1 ">
+        <div class="absolute left-36 -top-14 w-20 h-20 bg-primaryDark group-hover:bg-black rounded-full flex justify-center items-center text-center p-5">
           {item.icon}
         </div>
         <blockquote class="flex flex-col justify-between rounded-lg py-12 text-center px-6 space-y-4">

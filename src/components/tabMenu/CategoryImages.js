@@ -124,7 +124,7 @@ export const CategoryImages = () => {
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark   hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
+                className="inline-block p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
                 aria-current="page"
                 onClick={() => filterItem('Country')}>
                 Country
@@ -153,12 +153,14 @@ export const CategoryImages = () => {
                       </div>
                       <div className="relative p-6">
                         <div className="-mt-36">
-                          <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-4 group-hover:opacity-100">
+                          <div className="translate-y-8 transform opacity-0 group-hover:ease-in-out transition-all group-hover:duration-700 group-hover:translate-y-4 group-hover:opacity-100">
                             <div className="flex justify-center">
-                              <span class="text-lg text-black font-semibold">
-                                →
-                              </span>
-                              <Title>{item.title}</Title>
+                              <figcaption class="absolute bottom-0 z-90 w-3/4 bg-black/40 px-5 py-2 ">
+                                <span class="text-lg text-black font-semibold pr-3">
+                                  →
+                                </span>
+                                <Title>{item.title}</Title>
+                              </figcaption>
                             </div>
                           </div>
                         </div>

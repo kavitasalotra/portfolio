@@ -13,7 +13,13 @@ AOS.init();
 const HomeHero = () => {
   return (
     <div>
-      <div className="container mx-auto py-24 lg:py-24" data-aos="flip-left">
+      <div
+        className="container mx-auto py-24 lg:py-24"
+        data-aos="flip-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
         <div className="flex items-center md:px-16">
           <div className="sm:max-w-xl md:max-w-full md:px-24 px-16">
             <div className="flex flex-col items-center justify-end xl:flex-row lg:py-24 ">
