@@ -45,7 +45,7 @@ const Teams = () => {
         <div className="flex flex-wrap flex-row md:space-x-14 justify-center">
           {data.map((item) => (
             <div key={item.id} className="group">
-              <div className="flex py-6 rounded-lg group-hover:bg-primaryDark group-hover:transition group-hover:ease-in-out delay-100 group-hover:-translate-y-1 group-hover:rotate-2  group-hover:scale-110 group-hover:duration-500  md:py-9 md:px-14 px-8 flex-col justify-center my-3 md:my-8 md:space-y-4 text-center shadow-[0_4px_20px_10px_rgba(87,87,87,0.1)]">
+              <div className="flex py-6 rounded-lg group-hover:bg-primaryDark  group-hover:transition group-hover:ease-in-out delay-100 group-hover:-translate-y-1 group-hover:rotate-2  group-hover:scale-110 group-hover:duration-500  md:py-9 md:px-14 px-8 flex-col justify-center my-3 md:my-8 md:space-y-4 text-center shadow-[0_4px_20px_10px_rgba(87,87,87,0.1)]">
                 <Image
                   alt="team-image"
                   className="self-center flex-shrink-0 mb-4 bg-center bg-cover rounded-full"
@@ -60,20 +60,6 @@ const Teams = () => {
                   <span className="text-primaryDark group-hover:text-white ">
                     PHOTOGRAPHER
                   </span>
-                </div>
-                <div className="flex justify-center space-x-1 md:space-x-2 group-hover:text-white">
-                  <a href="#" title="Instagram">
-                    <TiSocialFacebook className="w-6 h-6" />
-                  </a>
-                  <a href="#" title="Pinterest">
-                    <TiSocialTwitter className="w-6 h-6" />
-                  </a>
-                  <a href="#" title="Twitter">
-                    <TiSocialLinkedin className="w-6 h-6" />
-                  </a>
-                  <a href="#" title="Facebook">
-                    <FaPinterestP className="w-4 h-5" />
-                  </a>
                 </div>
               </div>
             </div>

@@ -10,22 +10,30 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-backgroundLite mt-4">
       <footer className="container mx-auto">
-        <div className="flex flex-col p-4 justify-evenly md:items-center mx-auto lg:flex-row md:space-y-0 md:pb-8 space-y-6">
+        <div className="flex flex-col p-4 justify-evenly md:items-center mx-auto lg:flex-row md:space-y-0 md:p-8 space-y-6">
           <span>
             Copyright ©2023 All rights reserved | This template is made by
             <Link href="https://www.zeiq.co/">
               <strong className="text-primaryDark pl-2">zeiq.co</strong>
             </Link>
           </span>
-          <Image
-            src="/images/logo.png"
-            width={82}
-            height={21}
-            alt="logo"
-            className="object-contain"
-          />
+          <div className="flex items-center">
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                width={82}
+                height={21}
+                alt="logo"
+                className="object-contain pr-2"
+              />
+            </Link>
+            <span className="uppercase text-black text-sm mt-3">
+              photography
+            </span>
+          </div>
+
           <div className="flex flex-col pt-6 lg:pt-0">
             <div className="flex justify-center space-x-6">
               <a href="https://twitter.com/Zeiqofficial">

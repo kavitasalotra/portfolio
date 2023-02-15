@@ -21,13 +21,18 @@ const Navbar = () => {
           <nav className="py-4 md:py-0 px-0 md:px-16">
             <div className="flex items-center justify-around">
               <Link href="/">
-                <Image
-                  src="/images/logo.png"
-                  alt="logo"
-                  width={150}
-                  height={128}
-                  className="object-cover"
-                />
+                <div className="flex items-center">
+                  <Image
+                    src="/images/logo.png"
+                    alt="logo"
+                    width={90}
+                    height={35}
+                    className="object-cover pr-1"
+                  />
+                  <span className="uppercase text-white text-sm mt-3">
+                    photography
+                  </span>
+                </div>
               </Link>
               <div className="flex items-center sm:hidden">
                 <button
