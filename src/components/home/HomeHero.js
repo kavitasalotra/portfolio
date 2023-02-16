@@ -13,7 +13,7 @@ AOS.init();
 const HomeHero = ({ item }) => {
   return (
     <div>
-      <div class="relative">
+      <div class="relative py-14">
         <Image
           src={item.image}
           class="absolute inset-0 object-cover h-screen"
@@ -21,21 +21,29 @@ const HomeHero = ({ item }) => {
           width={1900}
           alt=""
         />
-        <div class="relative flex h-[60vh] px-9" data-aos="fade-up">
-          <div class="px-4 py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="sm:max-w-xl md:max-w-full md:px-24 px-16">
+        <div
+          class="relative flex h-[60vh] px-9"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="700"
+          data-aos-easing="ease-in-out">
+          <div class="px-4 py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
+            <div className=" md:max-w-full md:px-24 px-0">
               <div className="flex flex-col items-center justify-end xl:flex-row lg:py-24 ">
                 <div className="w-full max-w-xl  mb-12  xl:pr-16 space-y-4 md:space-y-8 ">
                   <div className="border-r-primaryDark text-animate">
                     <Heading textExtraLarge>{item.title}</Heading>
-                    <span className="text-secondaryLight text-4xl font-bold">
+                    <span className="text-primaryDark text-4xl font-bold">
                       {item.subTitle}
                     </span>
                   </div>
                   <Paragraph hasTextColorWhite textAlignLeft>
                     {item.description}
                   </Paragraph>
-                  <Button className="px-4 py-2">Get a quote</Button>
+                  <div className="hover:bg-primaryDark">
+                    <Button className="px-4 py-2">About Us</Button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,11 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
-import HomeHeroWrapper from '../elements/HomeHeroWrapper';
+import HomeHeroWrapper from './HomeHeroWrapper';
 
 const ContactUs = () => {
   return (
     <div>
-      <HomeHeroWrapper pageTitle="Contact Us" pageName="Contact" />
+      <HomeHeroWrapper
+        pageTitle="Contact Us"
+        pageName="Contact"
+        pageLink="/contact"
+      />
       <div className="container mx-auto">
         <section className="md:my-16 my-6 px-6 ">
           <div className="flex flex-wrap justify-center">
@@ -19,11 +23,11 @@ const ContactUs = () => {
                 <div className="mb-12 grow-0 shrink-0 basis-auto px-3 lg:px-6 space-y-9">
                   <div className="flex items-start">
                     <div className="ml-6">
-                      <p className="font-normal text-sm text-textGray mb-1">
+                      <p className="font-normal text-lg hover:text-primaryDark text-textGray mb-1">
                         Email
                       </p>
                       <Link href="mailto:admin@rehgeorgia.com">
-                        <span className="text-textDark font-semibold">
+                        <span className="text-textDark hover:text-primaryDark font-semibold">
                           sales@zeiq.co
                         </span>
                       </Link>
@@ -31,11 +35,11 @@ const ContactUs = () => {
                   </div>
                   <div className="flex items-start">
                     <div className="ml-6">
-                      <p className="font-normal text-sm text-textGray mb-1">
+                      <p className="font-normal text-lg hover:text-primaryDark text-textGray mb-1">
                         Call Us
                       </p>
                       <Link href="tel:+44-7747810130">
-                        <span className="text-textDark font-semibold">
+                        <span className="text-textDark hover:text-primaryDark font-semibold">
                           +44-7747810130
                         </span>
                       </Link>
@@ -45,10 +49,10 @@ const ContactUs = () => {
                 <div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
                   <div className="flex md:justify-center md:items-start">
                     <div className="ml-6">
-                      <p className="font-normal text-sm text-textGray mb-1">
+                      <p className="font-normal text-lg text-textGray cursor-pointer hover:text-primaryDark mb-1">
                         Visit Us
                       </p>
-                      <p className="text-textDark font-semibold">
+                      <p className="text-textDark hover:text-primaryDark font-semibold">
                         London, UK Punjab, India
                       </p>
                     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/global/Layout';
-// import HomeHero from '../components/home/HomeHero';
-// import styled from 'styled-components';
+
 import GalleryItem from '../components/home/GalleryItem';
 import dynamic from 'next/dynamic';
 

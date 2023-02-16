@@ -62,7 +62,7 @@ const HomeSlider = () => {
           <HomeHero key={item.id} item={item} />
         ))}
       </Slider>
-      <div className="flex md:px-11 md:mx-0 md:flex justify-between md:absolute inset-0 items-center md:justify-between">
+      <div className="flex md:px-11 md:mx-0 md:flex justify-center md:absolute inset-0 items-center md:justify-between">
         <div className="group">
           <button
             className="p-2.5  bg-white group-hover:bg-primaryDark rounded-full group-hover:transition group-hover:ease-in-out delay-100 group-hover:-translate-y-1 group-hover:rotate-2  group-hover:scale-110 group-hover:duration-500"

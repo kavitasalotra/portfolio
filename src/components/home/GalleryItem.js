@@ -2,6 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import Heading from '../atoms/Heading';
 import Link from 'next/link';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import { TiSocialInstagram } from 'react-icons/ti';
 
@@ -32,7 +35,71 @@ const galleryImages = [
   },
 ];
 
-const GalleryItem = () => {
+const GalleryItem = ({ item }) => {
+  return (
+    <>
+      <a href="#" className="group relative">
+        <div className=" ">
+          <Image
+            alt=""
+            src={item.image}
+            height={450}
+            width={412}
+            className="object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+          <div className="relative py-6">
+            <div className="-mt-64 ml-40 md:-mt-72 md:ml-44">
+              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-4 group-hover:opacity-100">
+                <span className="flex ">
+                  <TiSocialInstagram className="w-16 h-16 text-primaryDark" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </>
+  );
+};
+
+const Gallery = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+    cssEase: 'linear',
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="py-3 md:py-8">
       <div className="space-y-2 md:space-y-4 py-2 md:py-4 text-center">
@@ -45,34 +112,15 @@ const GalleryItem = () => {
           </span>
         </Link>
       </div>
-      <div className="flex-wrap flex md:flex-nowrap justify-center">
-        {galleryImages &&
-          galleryImages.map((item) => (
-            <>
-              <a href="#" className="group relative">
-                <div key={item.id} className="hover:bg-primaryDark/40 ">
-                  <Image
-                    alt=""
-                    src={item.image}
-                    height={350}
-                    width={312}
-                    className="object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                  />
-                </div>
-                <div className="relative p-6">
-                  <div className="-mt-56">
-                    <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-4 group-hover:opacity-100">
-                      <span className="flex justify-center">
-                        <TiSocialInstagram className="w-16 h-16 text-primaryDark" />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </>
+      <div className="container mx-auto">
+        <Slider {...settings}>
+          {galleryImages.map((item) => (
+            <GalleryItem key={item.id} item={item} />
           ))}
+        </Slider>
       </div>
     </div>
   );
 };
-export default GalleryItem;
+
+export default Gallery;

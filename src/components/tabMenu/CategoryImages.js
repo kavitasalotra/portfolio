@@ -132,7 +132,7 @@ export const CategoryImages = () => {
             </li>
           </ul>
           {active && (
-            <div className="text-center lg:py-14 ">
+            <div className="text-center lg:pt-11">
               <div className="grid gap-3 justify-center lg:gap-8 md:grid-cols-4">
                 {imageList.map((item) => (
                   <>
@@ -151,15 +151,17 @@ export const CategoryImages = () => {
                           className="object-cover opacity-75 transition-opacity group-hover:opacity-50"
                         />
                       </div>
-                      <div className="relative p-6">
+                      <div className="relative p-3">
                         <div className="-mt-36">
                           <div className="translate-y-8 transform opacity-0 group-hover:ease-in-out transition-all group-hover:duration-700 group-hover:translate-y-4 group-hover:opacity-100">
                             <div className="flex justify-center">
                               <figcaption class="absolute bottom-0 z-90 w-3/4 bg-black/40 px-5 py-2 ">
-                                <span class="text-lg text-black font-semibold pr-3">
+                                <span class="text-2xl text-primaryDark pr-3">
                                   →
                                 </span>
-                                <Title>{item.title}</Title>
+                                <Title className=" text-primaryDark">
+                                  {item.title}
+                                </Title>
                               </figcaption>
                             </div>
                           </div>

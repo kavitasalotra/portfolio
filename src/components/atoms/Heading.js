@@ -10,7 +10,7 @@ const Heading = ({
   <h1
     className={`${
       textExtraLarge
-        ? 'md:text-extraLarge text-primaryDark font-extrabold'
+        ? 'md:text-extraLarge text-yellow-200 font-extrabold'
         : 'md:text-4xl'
     }  font-semibold ${className} text-textDark text-3xl leading-none font-poppins `}
     {...props}>

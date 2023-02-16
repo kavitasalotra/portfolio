@@ -59,7 +59,7 @@ const Services = () => {
               our amazing services.
             </Paragraph>
           </div>
-          <div className="flex gap-6 py-4 md:py-10">
+          <div className="flex flex-wrap md:flex-wrap justify-center lg:flex-nowrap gap-6 py-4 md:py-10">
             {services.map((el) => (
               <ServiceItem key={el.id} item={el} />
             ))}

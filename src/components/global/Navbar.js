@@ -44,7 +44,7 @@ const Navbar = () => {
                   <span className="sr-only">Open main menu</span>
                   {active ? (
                     <AiOutlineClose
-                      className="h-10 w-12 md:w-24 stroke-white"
+                      className="h-10 w-12 md:w-24 text-white"
                       aria-hidden="true"
                     />
                   ) : (
