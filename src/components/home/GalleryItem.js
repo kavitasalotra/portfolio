@@ -38,7 +38,7 @@ const galleryImages = [
 const GalleryItem = ({ item }) => {
   return (
     <>
-      <a href="#" className="group relative">
+      <a className="group">
         <div className=" ">
           <Image
             alt=""
@@ -108,7 +108,7 @@ const Gallery = () => {
         </Heading>
         <Link href="mailto:admin@rehgeorgia.com">
           <span className="text-textGray text-sm hover:text-primaryDark">
-            @Alime_photographer
+            @kk_photographer
           </span>
         </Link>
       </div>

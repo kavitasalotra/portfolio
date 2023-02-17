@@ -16,7 +16,7 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
     <div className="">
-      <div className="bg-backgroundLite absolute z-10 top-0 left-0 right-0">
+      <div className="bg-black/20 z-20">
         <div className="container mx-auto">
           <nav className="py-4 md:py-0 px-0 md:px-16">
             <div className="flex items-center justify-around">

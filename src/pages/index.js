@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/global/Layout';
+import Services from '../components/home/Services';
 
-import GalleryItem from '../components/home/GalleryItem';
 import dynamic from 'next/dynamic';
 
 import Teams from '../components/home/Teams';
@@ -16,18 +16,14 @@ const CategoryImages = dynamic(
 const HomeSlider = dynamic(() => import('../components/home/HomeSlider'), {
   ssr: false,
 });
-// const Wrapper = styled.div`
-//   background-image: url('/images/Home-hero-image.jpg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// `;
 
 const index = () => {
   return (
     <Layout>
       <HomeSlider />
       <CategoryImages />
-      <GalleryItem />
+
+      <Services />
       <Teams />
     </Layout>
   );

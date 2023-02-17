@@ -12,7 +12,7 @@ export default function PostPage({ source, frontMatter }) {
   // console.log(frontMatter);
   return (
     <Layout>
-      <div className="container mx-auto my-3 md:my-16">
+      <div className="">
         <Image
           className="object-cover mx-auto min-h-screen"
           src={frontMatter.image}
@@ -23,7 +23,7 @@ export default function PostPage({ source, frontMatter }) {
         <h1 className="sm:text-3xl text-2xl  text-center text-gray-800  font-bold my-2">
           {frontMatter.title}
         </h1>
-        <main className="max-w-screen-lg mx-auto my-4 text-left prose prose-a:text-blue-500">
+        <main className=" px-4 md:px-6 md:max-w-screen-xl mx-auto my-4 text-left prose prose-a:text-blue-500">
           <MDXRemote {...source} />
         </main>
       </div>

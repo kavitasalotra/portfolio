@@ -8,21 +8,25 @@ import Paragraph from '../atoms/Paragraph';
 const services = [
   {
     id: 1,
-    icon: <MdPhotoCamera class="w-20 h-20 group-hover:text-white" />,
+    icon: (
+      <MdPhotoCamera class="w-20 h-20 group-hover:text-primaryDark text-white" />
+    ),
     title: 'Photography',
     description:
       ' Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? unde atque mollitia!',
   },
   {
     id: 2,
-    icon: <FaVideo class="w-20 h-20 group-hover:text-white" />,
+    icon: (
+      <FaVideo class="w-20 h-20  group-hover:text-primaryDark text-white" />
+    ),
     title: 'Video',
     description:
       ' Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? unde atque mollitia!',
   },
   {
     id: 3,
-    icon: <FaEdit class="w-20 h-20 group-hover:text-white" />,
+    icon: <FaEdit class="w-20 h-20  group-hover:text-primaryDark text-white" />,
     title: 'Editing',
     description:
       ' Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? unde atque mollitia!',
@@ -32,16 +36,14 @@ const services = [
 const ServiceItem = ({ item }) => {
   return (
     <div className="group transition-transform duration-300 transform hover:scale-105 ">
-      <div class=" bg-backgroundLite group-hover:bg-primaryDark/80 flex flex-col items-center w-full p-6 space-y-8 rounded-lg lg:h-full lg:p-8 ">
+      <div class=" bg-primaryDark/70 group-hover:bg-backgroundLite flex flex-col items-center w-full p-6 space-y-8 rounded-lg lg:h-full lg:p-8 ">
         {item.icon}
-        <Title className="group-hover:text-white">{item.title}</Title>
-        <blockquote class="max-w-lg text-lg italic font-medium text-center group-hover:text-white">
+        <Title className=" group-hover:text-primaryDark text-white">
+          {item.title}
+        </Title>
+        <blockquote class="max-w-lg text-lg italic font-medium text-center group-hover:text-primaryDark text-white">
           {item.description}
         </blockquote>
-        <div class="text-center group-hover:text-white">
-          <p>Leroy Jenkins</p>
-          <p>CEO of Company Co.</p>
-        </div>
       </div>
     </div>
   );

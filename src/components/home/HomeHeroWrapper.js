@@ -6,9 +6,9 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 
 const HomeHeroWrapper = ({ pageTitle, pageName, pageLink }) => {
   return (
-    <div>
-      <section className="relative bg-[url('/images/Home-hero-image.jpg')] bg-cover bg-left-top md:h-[70vh] bg-no-repeat">
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex justify-center  md:h-[70vh] lg:items-center lg:px-8">
+    <div className="z-10-mt-[4.4rem]">
+      <section className="  bg-[url('/images/Home-hero-image.jpg')] bg-cover bg-left-top md:h-[60vh] bg-no-repeat">
+        <div className=" mx-auto max-w-screen-xl px-4 py-32 sm:px-6 md:text-amber-300 flex justify-center  md:h-[60vh] lg:items-center lg:px-8">
           <div className="max-w-xl text-center md:text-center ">
             <Heading className="text-primaryDark">{pageTitle}</Heading>
             <nav className="flex justify-center" aria-label="Breadcrumb">
