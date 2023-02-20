@@ -99,10 +99,10 @@ export const CategoryImages = () => {
     <section className="container mx-auto">
       <div className="my-2 md:my-6 py-2 md:py-3 px-4 md:px-0">
         <div className="flex flex-col items-center justify-center">
-          <ul className="font-semibold text-xl text-center flex">
+          <ul className="font-semibold text-lg md:text-xl text-center flex py-4">
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
+                className="inline-block  p-2 md:p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
                 aria-current="page"
                 onClick={() => setImageList(images)}>
                 All
@@ -110,21 +110,21 @@ export const CategoryImages = () => {
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
+                className="inline-block p-2 md:p-4 w-full text-textPrimaryDark hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
                 onClick={() => filterItem('Human')}>
                 Human
               </button>
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
+                className="inline-block p-2 md:p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
                 onClick={() => filterItem('Nature')}>
                 Nature
               </button>
             </li>
             <li className="w-full">
               <button
-                className="inline-block p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
+                className="inline-block p-2 md:p-4  w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
                 aria-current="page"
                 onClick={() => filterItem('Country')}>
                 Country
