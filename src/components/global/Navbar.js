@@ -73,7 +73,7 @@ const Navbar = () => {
             </div>
           </nav>
           {active && (
-            <div className="sm:hidden flex flex-col space-y-2 text-center bg-primaryDark/30 px-2 pt-6 mx-2 ">
+            <div className="sm:hidden flex flex-col space-y-4 text-center bg-primaryDark/30 px-2 py-6">
               {navbarMenu.map((item) => (
                 <Link href={item.navLink} key={item.id}>
                   <span

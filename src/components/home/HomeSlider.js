@@ -17,7 +17,7 @@ const data = [
   },
   {
     id: 2,
-    image: '/images/gallery_img_11.jpg',
+    image: '/images/home-hero-2.jpg',
     title: 'Creative',
     subTitle: ' Photography Studio',
     description:
@@ -25,9 +25,9 @@ const data = [
   },
   {
     id: 3,
-    image: '/images/gallery_img_3.jpg',
+    image: '/images/home-hero-3.jpg',
     title: 'Creative Photography',
-    subTitle: '  View',
+    subTitle: 'View',
     description:
       'Cum et labore appareat, te est nostrum eligendi adipisci. Tota quas habeo eu vel. Vel autem apeirian primis.',
   },

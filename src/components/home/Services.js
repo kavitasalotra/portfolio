@@ -9,7 +9,7 @@ const services = [
   {
     id: 1,
     icon: (
-      <MdPhotoCamera class="w-20 h-20 group-hover:text-primaryDark text-white" />
+      <MdPhotoCamera class="w-20 h-20 group-hover:text-primaryDark/70 text-white" />
     ),
     title: 'Photography',
     description:
@@ -18,7 +18,7 @@ const services = [
   {
     id: 2,
     icon: (
-      <FaVideo class="w-20 h-20  group-hover:text-primaryDark text-white" />
+      <FaVideo class="w-20 h-20  group-hover:text-primaryDark/70 text-white" />
     ),
     title: 'Video',
     description:
@@ -26,7 +26,9 @@ const services = [
   },
   {
     id: 3,
-    icon: <FaEdit class="w-20 h-20  group-hover:text-primaryDark text-white" />,
+    icon: (
+      <FaEdit class="w-20 h-20  group-hover:text-primaryDark/70 text-white" />
+    ),
     title: 'Editing',
     description:
       ' Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae? unde atque mollitia!',
@@ -36,12 +38,12 @@ const services = [
 const ServiceItem = ({ item }) => {
   return (
     <div className="group transition-transform duration-300 transform hover:scale-105 ">
-      <div class=" bg-primaryDark/70 group-hover:bg-backgroundLite flex flex-col items-center w-full p-6 space-y-8 rounded-lg lg:h-full lg:p-8 ">
+      <div class=" bg-primaryDark/70 group-hover:bg-white group-hover:border-4 border-primaryDark/70 flex flex-col items-center w-full p-6 space-y-8 rounded-lg lg:h-full lg:p-8 ">
         {item.icon}
-        <Title className=" group-hover:text-primaryDark text-white">
+        <Title className=" group-hover:text-black text-white">
           {item.title}
         </Title>
-        <blockquote class="max-w-lg text-lg italic font-medium text-center group-hover:text-primaryDark text-white">
+        <blockquote class="max-w-lg text-lg italic font-medium text-center group-hover:text-black text-white">
           {item.description}
         </blockquote>
       </div>

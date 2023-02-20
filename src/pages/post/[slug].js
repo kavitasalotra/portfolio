@@ -14,16 +14,16 @@ export default function PostPage({ source, frontMatter }) {
     <Layout>
       <div className="">
         <Image
-          className="object-cover mx-auto min-h-screen"
+          className="object-cover mx-auto min-h-screen h-0"
           src={frontMatter.image}
           alt=""
           width={1100}
-          height={800}
+          height={300}
         />
         <h1 className="sm:text-3xl text-2xl  text-center text-gray-800  font-bold my-2">
           {frontMatter.title}
         </h1>
-        <main className=" px-4 md:px-6 md:max-w-screen-xl mx-auto my-4 text-left prose prose-a:text-blue-500">
+        <main className="px-4 md:px-6 md:max-w-screen-xl mx-auto my-4 text-left prose prose-a:text-blue-500 py-3">
           <MDXRemote {...source} />
         </main>
       </div>
