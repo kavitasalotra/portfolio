@@ -50,7 +50,7 @@ const FeaturedItem = ({ item }) => {
 const Features = () => (
   <section class="bg-backgroundGray">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-      <div class="mx-auto max-w-xl text-center py-4">
+      <div class="max-w-xl text-center py-4">
         <Heading>Why Choose Us</Heading>
       </div>
       <div class="mt-16 grid grid-cols-1 gap-24 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3">

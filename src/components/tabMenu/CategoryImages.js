@@ -96,82 +96,75 @@ export const CategoryImages = () => {
   };
   // console.log(filterItem, 'filterItem');
   return (
-    <section className="container mx-auto">
-      <div className="my-2 md:my-6 py-2 md:py-3 px-4 md:px-0">
-        <div className="flex flex-col items-center justify-center">
-          <ul className="font-semibold text-lg md:text-xl text-center flex py-4">
-            <li className="w-full">
-              <button
-                className="inline-block  p-2 md:p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
-                aria-current="page"
-                onClick={() => setImageList(images)}>
-                All
-              </button>
-            </li>
-            <li className="w-full">
-              <button
-                className="inline-block p-2 md:p-4 w-full text-textPrimaryDark hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
-                onClick={() => filterItem('Human')}>
-                Human
-              </button>
-            </li>
-            <li className="w-full">
-              <button
-                className="inline-block p-2 md:p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
-                onClick={() => filterItem('Nature')}>
-                Nature
-              </button>
-            </li>
-            <li className="w-full">
-              <button
-                className="inline-block p-2 md:p-4  w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
-                aria-current="page"
-                onClick={() => filterItem('Country')}>
-                Country
-              </button>
-            </li>
-          </ul>
-          {active && (
-            <div className="text-center lg:pt-6">
-              <div className="grid gap-3 justify-center lg:gap-8 md:grid-cols-4">
-                {imageList.map((item) => (
-                  <>
-                    <a href="#" className="group relative">
-                      <div key={item.id}>
-                        <Image
-                          alt=""
-                          height={198}
-                          width={349}
-                          src={item.image}
-                          data-aos="flip-left"
-                          data-aos-offset="200"
-                          data-aos-delay="50"
-                          data-aos-duration="1000"
-                          data-aos-easing="ease-in-out"
-                          className="object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                        />
-                      </div>
-                      <div className="relative p-3">
-                        <div className="-mt-36">
-                          <div className="translate-y-8 transform opacity-0 group-hover:ease-in-out transition-all group-hover:duration-700 group-hover:translate-y-4 group-hover:opacity-100">
-                            <div className="flex justify-center">
-                              <figcaption class="absolute bottom-0 z-90 w-3/4 bg-black/40 px-5 py-2 ">
-                                <span class="text-2xl text-white pr-3">→</span>
-                                <Title className=" text-white">
-                                  {item.title}
-                                </Title>
-                              </figcaption>
-                            </div>
+    <section className="container mx-auto my-4 md:my-8">
+      <div className="flex flex-col items-center justify-center space-y-3 md:space-y-6">
+        <ul className="font-semibold text-lg md:text-xl text-center flex">
+          <li>
+            <button
+              className="inline-block  p-2 md:p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
+              aria-current="page"
+              onClick={() => setImageList(images)}>
+              All
+            </button>
+          </li>
+          <li>
+            <button
+              className="inline-block p-2 md:p-4 w-full text-textPrimaryDark hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
+              onClick={() => filterItem('Human')}>
+              Human
+            </button>
+          </li>
+          <li>
+            <button
+              className="inline-block p-2 md:p-4 w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark  hover:text-primaryDark transition duration-1000 ease-in-out"
+              onClick={() => filterItem('Nature')}>
+              Nature
+            </button>
+          </li>
+          <li>
+            <button
+              className="inline-block p-2 md:p-4  w-full text-textPrimaryDark  hover:underline hover:decoration-primaryDark hover:text-primaryDark transition duration-1000 ease-in-out"
+              aria-current="page"
+              onClick={() => filterItem('Country')}>
+              Country
+            </button>
+          </li>
+        </ul>
+        {active && (
+          <div className="text-center">
+            <div className="grid gap-3 justify-center lg:gap-8 md:grid-cols-4">
+              {imageList.map((item) => (
+                <>
+                  <a href="#" className="group relative">
+                    <div key={item.id}>
+                      <Image
+                        alt=""
+                        height={198}
+                        width={349}
+                        src={item.image}
+                        className="object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                      />
+                    </div>
+                    <div className="relative p-3">
+                      <div className="-mt-36">
+                        <div className="translate-y-8 transform opacity-0 group-hover:ease-in-out transition-all group-hover:duration-700 group-hover:translate-y-4 group-hover:opacity-100">
+                          <div className="flex justify-center">
+                            <figcaption class="absolute bottom-0 z-90 w-3/4 bg-black/40 px-5 py-2 ">
+                              <span class="text-2xl text-white pr-3">→</span>
+                              <Title className=" text-white">
+                                {item.title}
+                              </Title>
+                            </figcaption>
                           </div>
                         </div>
                       </div>
-                    </a>
-                  </>
-                ))}
-              </div>
+                    </div>
+                  </a>
+                </>
+              ))}
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </section>
   );

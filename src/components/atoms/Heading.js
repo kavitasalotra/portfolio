@@ -1,12 +1,6 @@
 import React from 'react';
 
-const Heading = ({
-  children,
-  textAlignLeft,
-  textExtraLarge,
-  className,
-  ...props
-}) => (
+const Heading = ({ children, textExtraLarge, className, ...props }) => (
   <h1
     className={`${
       textExtraLarge

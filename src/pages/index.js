@@ -5,6 +5,7 @@ import Services from '../components/home/Services';
 import dynamic from 'next/dynamic';
 
 import Teams from '../components/home/Teams';
+import CallToAction from '../components/home/CallToAction';
 
 const CategoryImages = dynamic(
   () => import('../components/tabMenu/CategoryImages'),
@@ -25,6 +26,7 @@ const index = () => {
 
       <Services />
       <Teams />
+      <CallToAction />
     </Layout>
   );
 };
