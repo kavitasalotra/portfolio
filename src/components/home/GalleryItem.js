@@ -107,9 +107,9 @@ const Gallery = () => {
           Follow Instagram
         </Heading>
         <Link href="mailto:admin@rehgeorgia.com">
-          <span className="text-textGray text-sm hover:text-primaryDark">
+          <a className="text-textGray text-sm hover:text-primaryDark">
             @kk_photographer
-          </span>
+          </a>
         </Link>
       </div>
       <div className="container mx-auto">
