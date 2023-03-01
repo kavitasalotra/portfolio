@@ -27,28 +27,27 @@ const HomeHero = ({ item }) => {
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out">
-        <div class="px-4 py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
-          <div className=" md:max-w-full md:px-24 px-0">
-            <div className="flex flex-col items-center justify-end xl:flex-row lg:py-24 ">
-              <div className="w-full max-w-xl  mb-12  xl:pr-16 space-y-4 md:space-y-8 ">
-                <div className="border-r-primaryDark text-animate">
-                  <Heading textExtraLarge>{item.title}</Heading>
-                  <span className="text-primaryDark md:text-6xl text-4xl font-bold">
-                    {item.subTitle}
-                  </span>
-                </div>
-                <Paragraph hasTextColorWhite textAlignLeft>
-                  {item.description}
-                </Paragraph>
-                <div>
-                  <Link href="/about">
-                    <Button className="px-4 py-2">About Us</Button>
-                  </Link>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center  xl:flex-row">
+          <div className="md:px-32 px-6 my-24 lg:my-32">
+            <div className="space-y-6 md:space-y-10">
+              <div className="">
+                <Heading textExtraLarge>{item.title}</Heading>
+                <span className="text-primaryDark md:text-6xl text-4xl font-bold">
+                  {item.subTitle}
+                </span>
+              </div>
+              <Paragraph hasTextColorWhite textAlignLeft>
+                {item.description}
+              </Paragraph>
+              <div>
+                <Link href="/about">
+                  <Button className="px-4 py-2">About Us</Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
+        <div />
       </div>
     </div>
   );

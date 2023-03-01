@@ -53,7 +53,7 @@ const ServiceItem = ({ item }) => {
 
 const Services = () => {
   return (
-    <section class="container mx-auto my-11 md:my-16">
+    <section class="container mx-auto my-11 md:my-16 px-6">
       <div className="space-y-4 text-center">
         <Heading>Our services</Heading>
         <Paragraph>

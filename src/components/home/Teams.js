@@ -29,7 +29,7 @@ const data = [
 
 const Teams = () => {
   return (
-    <section className="container mx-auto mb-11 md:mb-16 space-y-11">
+    <section className="container mx-auto mb-11 md:mb-16 space-y-11 px-3 md:px-6">
       <div className="flex flex-col items-center justify-center space-y-4">
         <Heading>Our team</Heading>
         <Paragraph>

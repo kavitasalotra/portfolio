@@ -24,7 +24,7 @@ module.exports = {
         secondaryLight: '#ffe89e',
       },
       fontSize: {
-        extraLarge: '82px',
+        extraLarge: '76px',
       },
     },
   },

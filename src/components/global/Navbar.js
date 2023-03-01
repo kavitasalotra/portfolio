@@ -16,9 +16,9 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
     <div className="">
-      <div className="bg-black/20 z-20">
+      <div className="bg-black/20 z-10 fixed left-0 right-0">
         <div className="container mx-auto">
-          <nav className="py-4 md:py-0 px-0 md:px-16">
+          <nav className="px-0 md:px-16">
             <div className="flex items-center justify-around">
               <Link href="/">
                 <div className="flex items-center">
