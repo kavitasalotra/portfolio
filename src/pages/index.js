@@ -5,7 +5,6 @@ import Services from '../components/home/Services';
 import dynamic from 'next/dynamic';
 
 import Teams from '../components/home/Teams';
-import CallToAction from '../components/home/CallToAction';
 
 const CategoryImages = dynamic(
   () => import('../components/tabMenu/CategoryImages'),
@@ -20,13 +19,12 @@ const HomeSlider = dynamic(() => import('../components/home/HomeSlider'), {
 
 const index = () => {
   return (
-    <Layout>
+    <Layout isFixed>
       <HomeSlider />
       <CategoryImages />
-
       <Services />
       <Teams />
-      <CallToAction />
+     
     </Layout>
   );
 };
